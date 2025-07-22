@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/071b03fc66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dom Disfarçe</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <img
+          src="./assets/dom_disfarce.jpg"
+          alt="Logo Dom Disfarçe"
+          class="logo"
+        />
+        <h1 class="h1-logo">Dom Disfarçe | Barbearia</h1>
+
+        <!-- BOTÃO HAMBURGER -->
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!-- MENU -->
+      <nav class="menu">
+        <ul class="menu-list">
+          <li>
+            <h2>Horário de Funcionamento</h2>
+            <p>Segunda a Sabado: 08h:00 - 12h:00. Apenas com agendamento.</p>
+            <p>Reserve seu horário e venha ficar no estilo!</p>
+          </li>
+          <li>
+            <h2>Endereço</h2>
+            <p>R. João Ribeiro, 479</p>
+            <p>Contagem - MG</p>
+          </li>
+          <li>
+            <h2>Contato</h2>
+            <p>(31) 9 9684-3824</p>
+            <p>Charles</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- IMAGEM CHARLES -->
+      <img src="./assets/charles.jpg" alt="Charles" class="charles-img" />
+      <h2>Estilo é atitude</h2>
+      <p>Cortes na régua, barba no talento.</p>
+    </section>
+
+    <!-- FORM AGENDAMENTO -->
+    <section class="agendamento">
+      <h3>Agende seu horário agora</h3>
+      <form id="form-agendamento">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="date" id="data" placeholder="dd/mm/aaaa" required />
+        <input type="time" id="hora" placeholder="--:--" required />
+        <input type="tel" id="telefone" placeholder="Seu telefone" required />
+        <button type="submit">Agendar via WhatsApp</button>
+      </form>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-container">
+        <h3>Sobre Dom Disfarçe</h3>
+        <p>
+          Dom disfarce é mais que barbearia: é um templo de elegância para você
+          sair renovado e confiante.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="container">
+        <h3>Serviços</h3>
+        <div class="services-list">
+          <!-- Serviço: Corte -->
+          <div class="service-card">
+            <img src="./assets/cabelo.jpg" alt="corte" />
+            <h4>Corte</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">30,00</span>
+            </p>
+            <a href="https://wa.link/0wdft1"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Barba -->
+          <div class="service-card">
+            <img src="./assets/barba.jpg" alt="barba" />
+            <h4>Barba</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">30,00</span>
+            </p>
+            <a href="https://wa.link/vhacyx"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Corte + Barba -->
+          <div class="service-card">
+            <img src="./assets/barba.jpg" alt="barba" />
+            <img src="./assets/cabelo.jpg" alt="corte" />
+            <h4>Corte + Barba</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">60,00</span>
+            </p>
+            <a href="https://wa.link/tyus1h"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Sobrancelha -->
+          <div class="service-card">
+            <img src="./assets/sobrancelha.jpg" alt="sobrancelha" />
+            <h4>Sobrancelha</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">10,00</span>
+            </p>
+            <a href="https://wa.link/2hr200"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Botox -->
+          <div class="service-card">
+            <img src="./assets/botox.png" alt="botox" />
+            <h4>Botox Capilar</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">100,00</span>
+            </p>
+            <a href="https://wa.link/w3ymp7"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Alinhamento -->
+          <div class="service-card">
+            <img src="./assets/alinhamento.png" alt="alinhamento" />
+            <h4>Alinhamento</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">90,00</span>
+            </p>
+            <a href="https://wa.link/z7jd69"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Platinado -->
+          <div class="service-card">
+            <img src="./assets/platinado.png" alt="platinado" />
+            <h4>Platinado</h4>
+            <p>
+              <span class="currency">R$</span> <span class="price">120,00</span>
+            </p>
+            <a href="https://wa.link/v2t4iq"><button>Agendar</button></a>
+          </div>
+
+          <!-- Serviço: Colorido -->
+          <div class="service-card colorido-card">
+            <div class="container">
+              <img
+                src="./assets/cabelo_azul.jpg"
+                class="fade-in-one"
+                alt="Cabelo Azul"
+              />
+              <img
+                src="./assets/cabelo rosa.jpg"
+                class="fade-in-two"
+                alt="Cabelo Rosa"
+              />
+            </div>
+            <div class="hair-color">
+              <h4>Colorido</h4>
+              <p>
+                <span class="currency">R$</span>
+                <span class="price">100,00</span>
+              </p>
+              <a href="https://wa.link/y3smqt"><button>Agendar</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="contact-container">
+        <h3>Agende seu Horário</h3>
+        <p>
+          Atendemos de segunda a sábado via WhatsApp. Garanta seu horário e
+          venha ficar alinhado no Dom Disfarce!
+        </p>
+        <a
+          href="https://wa.me/5531996843824"
+          target="_blank"
+          class="contact-whats"
+          >Agende agora</a
+        >
+      </div>
+
+      <div class="container-location">
+        <h3>Nossa Localização</h3>
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.5803894984617!2d-44.076492425744246!3d-19.55290953683409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690df3f347ed5%3A0x3ef97c8b11fefb7c!2sR.%20Jo%C3%A3o%20Ribeiro%2C%20469%20-%20Industrial%20S%C3%A3o%20Luiz%2C%20Contagem%20-%20MG%2C%2032093-520!5e0!3m2!1spt-BR!2sbr!4v1721572683358!5m2!1spt-BR!2sbr"
+        >
+        </iframe>
+      </div>
+
+      <div class="social-network">
+        <!-- REDE SOCIAL DOM DISFARCE -->
+        <p>Nos siga no Instagram</p>
+        <a
+          href="https://www.instagram.com/domdisfarce?igsh=MWx5MjBreDlzdWNoeQ=="
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-footer">
+        <p>&copy; 2025 Dom Disfarçe. Todos os direitos reservados.</p>
+      </div>
+      <div class="developer">
+        <p>
+          <a href="https://wa.link/sfcnd6"
+            ><span class="text-color">desenvolvido por Disley Martins</span
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
