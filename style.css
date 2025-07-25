@@ -245,9 +245,6 @@ input[type="time"] {
   font-size: 1rem;
   outline: none;
   width: 100%;
-  appearance: none; /* Remove o estilo padrão do navegador */
-  -webkit-appearance: none; /* Remove o estilo padrão do navegador no Safari */
-  -moz-appearance: none; /* Remove o estilo padrão do navegador no Firefox */
 }
 
 /* ABOUT */
