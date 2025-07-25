@@ -123,6 +123,7 @@ a {
   align-items: center;
   margin-bottom: 20px;
   gap: 7px;
+  
 }
 
 .menu-list p {
@@ -234,14 +235,19 @@ a {
   background: linear-gradient(to right, #ffd700, #f1c40f);
 }
 
-#data::placeholder {
+input[type="date"],
+input[type="time"] {
+  background-color: #222;
   color: #fff;
-  content: "dd/mm/aaaa";
-}
-
-#hora::placeholder {
-  color: #fff;
-  content: "--:--";
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  appearance: none; /* Remove o estilo padrão do navegador */
+  -webkit-appearance: none; /* Remove o estilo padrão do navegador no Safari */
+  -moz-appearance: none; /* Remove o estilo padrão do navegador no Firefox */
 }
 
 /* ABOUT */
@@ -402,7 +408,11 @@ button:active {
   margin: 20px 0;
 }
 
-
+.contact-container h3 {
+  color: #EEE8AA;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
 
  .container-location {
   color: #EEE8AA;
