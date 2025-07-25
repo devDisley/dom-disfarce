@@ -123,7 +123,6 @@ a {
   align-items: center;
   margin-bottom: 20px;
   gap: 7px;
-  
 }
 
 .menu-list p {
@@ -184,8 +183,8 @@ a {
 
 /* AGENDAMENTOS */
 .agendamento {
-  background: linear-gradient(135deg, #000, #222, #d69e36); 
-  color: #f1c40f; 
+  background: linear-gradient(135deg, #000, #222, #d69e36);
+  color: #f1c40f;
   padding: 2rem;
   border-radius: 10px;
   max-width: 400px;
@@ -197,7 +196,7 @@ a {
 .agendamento h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #EEE8AA;
+  color: #eee8aa;
 }
 
 #form-agendamento {
@@ -224,7 +223,8 @@ a {
   padding: 0.75rem 1rem;
   border: none;
   border-radius: 5px;
-  background: linear-gradient(to right, #f1c40f, #ffd9005a, #f1c40f), linear-gradient(135deg, #000, #ccc, #d69e36);
+  background: linear-gradient(to right, #f1c40f, #ffd9005a, #f1c40f),
+    linear-gradient(135deg, #000, #ccc, #d69e36);
   color: #000;
   font-weight: bold;
   cursor: pointer;
@@ -235,16 +235,38 @@ a {
   background: linear-gradient(to right, #ffd700, #f1c40f);
 }
 
-input[type="date"],
-input[type="time"] {
-  background-color: #222;
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 3rem;
+  font-size: 1rem;
   color: #fff;
+  background-color: #222;
   border: none;
   border-radius: 5px;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
   outline: none;
-  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.input-wrapper .icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #eee;
 }
 
 /* ABOUT */
@@ -259,7 +281,7 @@ input[type="time"] {
 }
 
 .about-container h3 {
- color: #EEE8AA;
+  color: #eee8aa;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
@@ -406,15 +428,15 @@ button:active {
 }
 
 .contact-container h3 {
-  color: #EEE8AA;
+  color: #eee8aa;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
- .container-location {
-  color: #EEE8AA;
+.container-location {
+  color: #eee8aa;
   padding: 2rem;
- }
+}
 
 .map-iframe {
   width: 40%;
@@ -460,7 +482,6 @@ footer .developer i {
 .text-color {
   color: #fff;
   font-weight: bold;
-
 }
 
 .fa-brands.fa-instagram {
@@ -470,7 +491,7 @@ footer .developer i {
   align-items: center;
   width: 1.8rem;
   height: 1.5rem;
-  
+
   border-radius: 1rem;
   transform: scale(1.2);
   transition: all 0.3s;
@@ -500,7 +521,7 @@ footer .developer i {
 .social-network p {
   margin: 0.5rem 0;
   font-size: 1.2rem;
-  color: #EEE8AA;
+  color: #eee8aa;
 }
 
 .social-network a {
@@ -574,21 +595,23 @@ body {
     margin-bottom: 10px;
   }
 
-  .charles-img:hover, :focus {
+  .charles-img:hover,
+  :focus {
     transform: scale(1.05);
     border: 3px solid #ffb701;
   }
 
- .container-location {
-  color: #EEE8AA;
-  padding: 2rem;
- }
+  .container-location {
+    color: #eee8aa;
+    padding: 2rem;
+  }
 
   .map-iframe {
-  width: 80%;
-  height: 160px;
-  border: 0;
-}}
+    width: 80%;
+    height: 160px;
+    border: 0;
+  }
+}
 
 /* TABLET E DESKTOP (a partir de 768px) */
 @media (min-width: 768px) {
@@ -641,7 +664,7 @@ body {
   .menu-list h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #EEE8AA;
+    color: #eee8aa;
   }
   .menu-list p {
     text-align: center;
