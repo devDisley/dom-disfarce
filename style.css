@@ -235,38 +235,19 @@ a {
   background: linear-gradient(to right, #ffd700, #f1c40f);
 }
 
-.input-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.input-wrapper input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  padding-right: 3rem;
-  font-size: 1rem;
-  color: #fff;
+input[type="date"],
+input[type="time"] {
   background-color: #222;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
   outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.input-wrapper .icon {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.input-wrapper .icon svg {
-  width: 24px;
-  height: 24px;
-  fill: #eee;
+  width: 100%;
+  appearance: none; /* Remove o estilo padrão do navegador */
+  -webkit-appearance: none; /* Remove o estilo padrão do navegador para o Chrome e Safari */
+  -moz-appearance: none; /* Remove o estilo padrão do navegador para o Firefox */
 }
 
 /* ABOUT */
